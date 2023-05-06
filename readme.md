@@ -23,10 +23,10 @@ In the root directory run:
 go run main.go
 ```
 
-## Database Structure
+## Database Design
 Database [structure](docs/database/med_bridge_db.png)
 
-## App design
+## App Design
 In deapth database and app design can be found [here](https://miro.com/app/board/uXjVML3AcEE=/?share_link_id=886445894903)
 
 ## Using the api
@@ -69,7 +69,7 @@ Sample response:
 ## Todos:
 - Add authentication
 - User roles for scoping api requests
-- CRUD operations for patients and therapists
+- Add services for patients and therapists
 - Exercise program versioning needs to be implemented for changes after n sessions
 - ORM could be updated
 - Implement tests for each handler

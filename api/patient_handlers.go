@@ -10,6 +10,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
+// GetPatientExerciseProgram get all the details about a patient exercise
 func (c *Client) GetPatientExerciseProgram() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// TODO: this is a bit clunky, should use something like gorm to clean up the queries

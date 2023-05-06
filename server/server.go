@@ -21,7 +21,7 @@ type Logger struct {
 	handler http.Handler
 }
 
-// ServeHTTP
+// ServeHTTP build and serve the routes
 func (l *Logger) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	l.handler.ServeHTTP(w, r)
 	log.Println("handling route: ", r.URL.Path)
@@ -59,7 +59,7 @@ func NewServer(db *sql.DB) *Server {
 	return s
 }
 
-// start up the server
+// Start start up the server
 func (s *Server) Start() error {
 	return s.server.ListenAndServe()
 }
