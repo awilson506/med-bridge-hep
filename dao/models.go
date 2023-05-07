@@ -50,5 +50,11 @@ type Program struct {
 }
 
 type PatientResult struct {
-	Id int `json:"id"`
+	Id         int       `json:"id"`
+	PatientId  int       `json:"patient_id"`
+	ExerciseId int       `json:"exercise_id"`
+	ProgramId  int       `json:"program_id"`
+	Score      int       `json:"score"`
+	Complete   bool      `json:"complete"`
+	CreatedAt  time.Time `json:"created_id,omitempty"`
 }
