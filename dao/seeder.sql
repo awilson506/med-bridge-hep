@@ -4,10 +4,10 @@ VALUES (1, 'Michael', 'Scott', 'mscott@dundermifflin.com'),
        (2, 'Dwight', 'Schrute', 'dschrute@dundermifflin.com');
 
 -- seed patient table
-INSERT INTO patients (id, first_name, last_name, email, therapist_id)
-VALUES (1, 'Alice', 'Smith', 'alicesmith@example.com', 1),
-       (2, 'Bob', 'Johnson', 'bobjohnson@example.com', 1),
-       (3, 'Charlie', 'Brown', 'charliebrown@example.com', 2);
+INSERT INTO patients (id, first_name, last_name, date_of_birth, email, therapist_id)
+VALUES (1, 'Alice', 'Smith', '1999-01-08', 'alicesmith@example.com', 1),
+       (2, 'Bob', 'Johnson', '1989-01-08', 'bobjohnson@example.com', 1),
+       (3, 'Charlie', 'Brown', '1969-01-08', 'charliebrown@example.com', 2);
 
 -- seed program table
 INSERT INTO programs (id, name, description, patient_id, therapist_id)

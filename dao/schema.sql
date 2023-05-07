@@ -3,7 +3,7 @@ CREATE TABLE therapists (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    email VARCHAR(100),
+    email VARCHAR(100) NOT NULL,
     phone VARCHAR(20),
     credentials VARCHAR(200),
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
@@ -15,8 +15,8 @@ CREATE TABLE patients (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    date_of_birth DATE,
-    email VARCHAR(100),
+    date_of_birth DATE NOT NULL,
+    email VARCHAR(100) NOT NULL,
     phone VARCHAR(20),
     address VARCHAR(200),
     therapist_id INTEGER REFERENCES therapists(id),
@@ -27,7 +27,7 @@ CREATE TABLE patients (
 -- create exercises table
 CREATE TABLE exercises (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
+    name VARCHAR(100) NOT NULL,
     description TEXT,
     created_at TIMESTAMP NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMP NOT NULL DEFAULT NOW()
@@ -36,7 +36,7 @@ CREATE TABLE exercises (
 -- create programs table
 CREATE TABLE programs (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
+    name VARCHAR(100) NOT NULL,
     patient_id INTEGER REFERENCES patients(id),
     therapist_id INTEGER REFERENCES therapists(id),
     description TEXT,
