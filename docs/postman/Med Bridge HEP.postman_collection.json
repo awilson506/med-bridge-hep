@@ -36,7 +36,52 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Exercises",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/v1/exercises",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"exercises"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 May 2023 18:03:57 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "368"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Exercise 1\",\n        \"description\": \"This is exercise 1 for program 1\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Exercise 2\",\n        \"description\": \"This is exercise 2 for program 1\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Exercise 1\",\n        \"description\": \"This is exercise 1 for program 2\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"this is a test\",\n        \"description\": \"testing this out\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"this is a test\",\n        \"description\": \"testing this out\"\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "Get Exercise",
@@ -57,7 +102,47 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Exercise",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v1/exercises/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"exercises",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 07 May 2023 18:04:40 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "78"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Exercise 1\",\n    \"description\": \"This is exercise 1 for program 1\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Create Exercise",
@@ -112,7 +197,47 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Patient Program",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/v1/patient-program/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v1",
+										"patient-program",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 05 May 2023 22:51:39 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "379"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Program 1\",\n    \"description\": \"This is program 1\",\n    \"patient_id\": 1,\n    \"therapist\": {\n        \"id\": 1,\n        \"first_name\": \"John\",\n        \"last_name\": \"Doe\",\n        \"email\": \"johndoe@example.com\"\n    },\n    \"exercises\": [\n        {\n            \"id\": 1,\n            \"name\": \"Exercise 1\",\n            \"description\": \"This is exercise 1 for program 1\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Exercise 2\",\n            \"description\": \"This is exercise 2 for program 1\"\n        }\n    ],\n    \"created_at\": \"2023-05-05T19:26:44.027269Z\"\n}"
+						}
+					]
 				}
 			]
 		}
