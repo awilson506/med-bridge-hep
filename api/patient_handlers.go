@@ -45,7 +45,7 @@ func (c *Client) GetPatientExerciseProgram() http.HandlerFunc {
 		//TODO add session data to the kitchen sink here
 		for exercises.Next() {
 			exercise := dao.Exercise{}
-			err := exercises.Scan(&exercise.Id, &exercise.Name, &exercise.Description)
+			err := exercises.Scan(&exercise.Id, &exercise.Url, &exercise.Name, &exercise.Description)
 			if err != nil {
 				http.Error(w, err.Error(), http.StatusInternalServerError)
 				return

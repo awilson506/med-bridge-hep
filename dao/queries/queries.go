@@ -15,6 +15,7 @@ const GetProgramById = `
 const GetExercisesByProgramId = `
 	SELECT
 		e.id,
+		e.url,
 		e.name, 
 		e.description
 	FROM programs pr 

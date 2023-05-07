@@ -23,6 +23,7 @@ type Therapist struct {
 
 type Exercise struct {
 	Id          int     `json:"id"`
+	Url         *string `json:"url"`
 	Name        string  `json:"name"`
 	Description *string `json:"description"`
 }

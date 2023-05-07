@@ -46,23 +46,25 @@ Sample response:
     "patient_id": 1,
     "therapist": {
         "id": 1,
-        "first_name": "John",
-        "last_name": "Doe",
-        "email": "johndoe@example.com"
+        "first_name": "Michael",
+        "last_name": "Scott",
+        "email": "mscott@dundermifflin.com"
     },
     "exercises": [
         {
             "id": 1,
+            "url": null,
             "name": "Exercise 1",
             "description": "This is exercise 1 for program 1"
         },
         {
             "id": 2,
+            "url": null,
             "name": "Exercise 2",
             "description": "This is exercise 2 for program 1"
         }
     ],
-    "created_at": "2023-05-05T19:26:44.027269Z"
+    "created_at": "2023-05-07T21:50:51.057318Z"
 }
 ```
 
