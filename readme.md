@@ -69,7 +69,7 @@ Sample response:
 ## Todos:
 - Add authentication
 - User roles for scoping api requests
-- Add services for patients and therapists
+- Add services for patients, results and therapists
 - Exercise program versioning needs to be implemented for changes after n sessions
 - ORM could be updated
 - Implement tests for each handler
