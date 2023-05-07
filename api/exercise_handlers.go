@@ -51,6 +51,7 @@ func (c *Client) GetExercise() http.HandlerFunc {
 		row := c.db.QueryRow(queries.GetExerciseById, id)
 
 		exercise := dao.Exercise{}
+		// TODO add some handling for records not found
 		err = row.Scan(&exercise.Id, &exercise.Name, &exercise.Description)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)

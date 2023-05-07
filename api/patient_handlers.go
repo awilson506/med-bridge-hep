@@ -52,6 +52,7 @@ func (c *Client) GetPatientExerciseProgram() http.HandlerFunc {
 			}
 			program.Exercises = append(program.Exercises, &exercise)
 		}
+
 		json.NewEncoder(w).Encode(program)
 	}
 }

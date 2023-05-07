@@ -30,7 +30,7 @@ Database [structure](docs/database/med_bridge_db.png)
 In deapth database and app design can be found [here](https://miro.com/app/board/uXjVML3AcEE=/?share_link_id=886445894903)
 
 ## Using the api
-This application offers CRUD services for patients, thereapists and exercise programs.
+This application offers services for patients, thereapists and exercise programs.
 
 Here's an example for retreiving a patient program:
 ```

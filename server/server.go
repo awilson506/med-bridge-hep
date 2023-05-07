@@ -23,6 +23,7 @@ type Logger struct {
 
 // ServeHTTP build and serve the routes
 func (l *Logger) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
 	l.handler.ServeHTTP(w, r)
 	log.Println("handling route: ", r.URL.Path)
 }
