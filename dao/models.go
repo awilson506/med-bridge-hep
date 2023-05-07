@@ -3,13 +3,13 @@ package dao
 import "time"
 
 type Patient struct {
-	Id          int    `json:"id"`
-	FirstName   string `json:"first_name"`
-	LastName    string `json:"last_name"`
-	DateOfBirth string `json:"date_of_birth"`
-	Email       string `json:"email,omitempty"`
-	Phone       string `json:"phone,omitempty"`
-	Address     string `json:"address,omitempty"`
+	Id          int     `json:"id"`
+	FirstName   string  `json:"first_name"`
+	LastName    string  `json:"last_name"`
+	DateOfBirth *string `json:"date_of_birth"`
+	Email       string  `json:"email,omitempty"`
+	Phone       *string `json:"phone,omitempty"`
+	Address     *string `json:"address,omitempty"`
 }
 
 type Therapist struct {
@@ -39,7 +39,7 @@ type Session struct {
 type Program struct {
 	Id          int         `json:"id"`
 	Name        string      `json:"name"`
-	Description string      `json:"description"`
+	Description *string     `json:"description"`
 	PatientID   int         `json:"patient_id"`
 	TherapistId int         `json:"-"`
 	Therapist   Therapist   `json:"therapist"`
