@@ -76,4 +76,4 @@ Sample response:
 - ORM could be updated
 - Implement tests for each handler
 - Because this program may have a daily or even hourly routine we'll need to implement scheduling and scoring 
-based on multiple repitions of the exercise program
+based on multiple repetitions of the exercise program
