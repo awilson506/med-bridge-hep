@@ -75,5 +75,5 @@ Sample response:
 - Exercise program versioning needs to be implemented for changes after n sessions
 - ORM could be updated
 - Implement tests for each handler
-- Because this program may have a daily or even hourly routine we'll need to implement sceduling and scoring 
+- Because this program may have a daily or even hourly routine we'll need to implement scheduling and scoring 
 based on multiple repitions of the exercise program
